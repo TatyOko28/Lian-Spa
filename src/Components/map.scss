@@ -1,0 +1,35 @@
+.localized-service-network {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; // Aligner le contenu en haut
+    height: 80vh; // Assurez-vous que la hauteur soit celle que vous souhaitez
+    background-image: url('./assets/off.webp'); // Assurez-vous que le chemin vers l'image soit correct
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 20px; // Ajouter un peu de padding en haut pour l'espace
+  
+    h1 {
+      font-size: 2em;
+      font-weight: bold;
+      color: #333; // Vous pouvez ajuster la couleur selon vos besoins     
+    }
+  }
+
+  @media (max-width: 576px){
+    .localized-service-network {      
+      height: 100vh; // Assurez-vous que la hauteur soit celle que vous souhaitez      
+      background-size: 80%;      
+      padding-top: 5px; // Ajouter un peu de padding en haut pour l'espace
+      height: 50vh;
+    
+      h1 {
+        font-size: 1.2em;
+        margin-left: 20px;
+        font-weight: bold;
+        color: #333; // Vous pouvez ajuster la couleur selon vos besoins     
+      }
+    } 
+    
+  }
+  

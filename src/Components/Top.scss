@@ -1,0 +1,164 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.background {
+  background: url('./assets/3.png') no-repeat top center ;
+  background-size: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  color: white;
+  padding: 0;
+
+  &.scrolled {
+    background: none; /* Cache le fond lors du défilement */
+  }
+}
+
+.overlay {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 4px;
+  transition: transform 0.5s ease-out; 
+
+  &.scrolled {
+    transform: translateY(-100%); /* Déplace le contenu vers le haut lors du défilement */
+  }
+}
+
+.header {
+  text-align: left;
+  max-width: 450px;
+  margin-right: 700px;
+  padding-right: 20px;
+  
+  top: 0;
+  z-index: 1000; /* Ensure the header is above other content */
+
+  h1 {
+    font-size: 3.0em;
+    font-weight: bold;
+    margin-bottom: 20px;    
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .sp{
+    font-size: 25px;
+    color: #FFD700;
+    font-weight: bold;
+  }
+}
+
+.content {
+  margin-top: 200px; /* Adjust to avoid overlapping the fixed header */
+  z-index: 1;
+}
+
+.bottom-bar {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+}
+
+/* Media queries for responsive design */
+
+@media (max-width: 1500px) {
+  .background {
+    background-size: 100%;
+  }
+  .header {
+    margin-right: 0;
+    max-width: 50%;
+    padding-right: 350px;
+    text-align: justify;
+  }
+}
+/* Large screens */
+@media (max-width: 1200px) {
+  .header {
+    margin-right: 0;
+    max-width: 90%;
+    padding-right: 0;
+    text-align: justify;
+  }
+}
+
+/* Medium screens */
+@media (max-width: 992px) {
+  .header {
+    margin-right: 0;
+    max-width: 90%;
+    padding-right: 0;
+    text-align: justify;
+
+    h1 {
+      font-size: 2.5em;
+    }
+
+    p {
+      font-size: 18px;
+      text-align: justify;
+    }
+  }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+  .header {
+    margin-right: 0;
+    max-width: 80%;
+    padding-right: 0;
+    text-align: justify;
+
+    h1 {
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .overlay {
+    justify-content: center;
+    padding-top: 10px;
+  }
+}
+@media (max-width: 541px) {
+  .background {
+    background-size: 250%;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 576px) {
+  .background {
+    background-size: 250%;
+  }
+
+  .header {
+    h1 {
+      font-size: 1.5em;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .bottom-bar {
+    height: 40px;
+  }
+}

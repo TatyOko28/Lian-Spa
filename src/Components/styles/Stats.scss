@@ -1,0 +1,115 @@
+// src/Components/stats.scss
+.stats-container {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #ffffff;
+  margin-top: -150px;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  margin: 20px;
+  flex: 1 1 200px;
+  max-width: 200px;
+  text-align: start;
+}
+
+.stat-item h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #333333;
+}
+.stat-item p {
+  font-size: 1.1em;
+  color: #666666;
+}
+
+.span{
+  font-size: 1rem;  
+  font-weight: 600;
+  max-width: 15px;
+}
+
+.note {
+  margin-top: 50px;
+  font-size: 0.9em;
+  color: #999999;
+  text-align: start;
+  margin-left: 80px;
+}
+
+.note .highlight {
+  color: #333333;
+  font-weight: bold;
+}
+
+
+/* Large screens */
+@media (max-width: 1300px) {
+  .stats-container {    
+    margin-top: -300px;
+  } 
+}
+@media (max-width: 1024px) {
+  .stats-container {    
+    margin-top: -200px;
+  } 
+}
+
+/* Medium screens */
+@media (max-width: 992px) {
+  .stats-container {    
+    margin-top: -900px;  
+  }
+}
+
+/* Small screens */
+@media (max-width: 769px) {
+  .stats-container {    
+    margin-top: -750px;
+  } 
+}
+
+/* Extra small screens */
+@media (max-width: 576px){
+  .stats-container {    
+    margin-top: -500px;
+  }  
+  .stat-item {
+  margin: 20px;
+  flex: 1 1 200px;
+  max-width: 100px;
+  text-align: start;
+}
+
+.stat-item p {
+  font-size: 0.8em;
+  color: #666666;
+}
+
+.stat-item h2 {
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #3f3c3c;
+}
+.note {
+  margin-top: 50px;
+  font-size: 0.9em;
+  color: #999999;
+  text-align: start;
+  margin-left: 30px;
+}
+
+}
+

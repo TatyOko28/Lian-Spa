@@ -1,0 +1,66 @@
+.travel-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    
+    .travel-item {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+      font-size: 16px;
+      
+      p {
+        margin: 0 10px 0 0;
+      }
+      
+      .detail-button {
+        background-color: #d4a373;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+  
+        &:hover {
+          background-color: #bf8a50;
+        }
+      }
+    }
+  
+    .more-feedback-button {
+      margin: 20px 0;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      padding: 10px 20px;
+      color: #666;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: #e0e0e0;
+      }
+    }
+  
+    .magazine-section {
+      text-align: center;
+      margin-top: 40px;
+  
+      h3 {
+        font-size: 18px;
+        color: #d4a373;
+        margin: 0;
+      }
+  
+      h4 {
+        font-size: 24px;
+        color: #333;
+        margin: 10px 0 0;
+      }
+    }
+  }
+  

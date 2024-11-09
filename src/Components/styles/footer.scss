@@ -1,0 +1,121 @@
+.footer {
+  background-color: #f9f9f9;
+  padding: 20px 5%;
+  font-family: Arial, sans-serif;
+  color: #333;
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .footer-logo {
+    flex: 1 100%;
+    text-align: center;
+    margin-bottom: 20px;
+
+    h2 {
+      color: #0066ff;
+      font-size: 1.5em;
+    }
+  }
+
+  .footer-columns {
+    display: grid;
+    gap: 10px;
+    width: 100%;
+
+    .footer-column {
+      margin: 10px;
+
+      h3 {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    .contact {
+      margin: 10px;
+
+      .social-icons {
+        display: flex;
+        gap: 15px;
+        margin-top: 10px;
+
+        a {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          background-color: #e1e1e1; /* Light grey background */
+          cursor: pointer;
+          transition: background-color 0.3s;
+
+          &:hover {
+            background-color: #e14b4b; /* Blue background on hover */
+            color: #ffffff; /* White icon on hover */
+          }
+
+          svg {
+            font-size: 1.5em; /* Adjust icon size as needed */
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+
+    p {
+      margin: 5px 0;
+      font-size: 0.9em;
+      text-align: center;
+      flex: 1 100%;
+    }
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 576px) {
+  .footer-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  .footer-columns {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1280px) {
+  .footer-columns {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1281px) {
+  .footer-columns {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

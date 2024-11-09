@@ -1,0 +1,70 @@
+.container {
+  background-color: #ebf4fc;
+  padding-top: 115px; // Padding uniforme pour tous les écrans
+  width: 100%; // Utilisation de 100% pour la fluidité
+  height: 250px;
+  max-width: 100%; // Limite la largeur maximale
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px auto; // Centrage automatique
+}
+
+.title {
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 30px;
+}
+
+.button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+
+  &:hover {
+      background-color: #0056b3;
+  }
+}
+
+// Media queries pour différentes tailles d'écran
+@media (max-width: 768px) {
+  .title {
+      font-size: 20px; // Taille de police plus petite
+  }
+
+  .description {
+      font-size: 14px;
+  }
+
+  .button {
+      padding: 8px 16px; // Bouton plus petit
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+      font-size: 18px;
+  }
+
+  .description {
+      font-size: 12px;
+  }
+
+  .button {
+      font-size: 14px;
+  }
+}
